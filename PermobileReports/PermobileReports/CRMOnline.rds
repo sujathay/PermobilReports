@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CRMOnline">
+  <ConnectionProperties>
+    <Extension>MSCRMFETCH</Extension>
+    <ConnectString>https://permobilsandbox.crm4.dynamics.com;permobil0</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>b5a76f2a-8259-42e4-b629-977bcf24e5fd</DataSourceID>
+</RptDataSource>

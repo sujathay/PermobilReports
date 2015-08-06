@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>CRMOnline</DataSourceReference>
+      <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
+  &lt;entity name="goal"&gt;
+    &lt;attribute name="title" /&gt;
+    &lt;attribute name="goalownerid" /&gt;
+    &lt;attribute name="fiscalperiod" /&gt;
+    &lt;attribute name="fiscalyear" /&gt;
+    &lt;attribute name="targetstring" /&gt;
+    &lt;attribute name="percentage" /&gt;
+    &lt;attribute name="actualstring" /&gt;
+    &lt;attribute name="inprogressstring" /&gt;
+    &lt;attribute name="metricid" /&gt;
+    &lt;attribute name="parentgoalid" /&gt;
+    &lt;attribute name="goalstartdate" /&gt;
+    &lt;attribute name="goalenddate" /&gt;
+    &lt;attribute name="permobil_timeperiod" /&gt;
+    &lt;attribute name="goalid" /&gt;
+    &lt;order attribute="fiscalyear" descending="true" /&gt;
+    &lt;order attribute="fiscalperiod" descending="false" /&gt;
+    &lt;filter type="and"&gt;
+      &lt;condition attribute="statecode" operator="eq" value="0" /&gt;
+    &lt;/filter&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="title">
+        <DataField>title</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalownerid">
+        <DataField>goalownerid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalowneridValue">
+        <DataField>goalowneridValue</DataField>
+        <rd:TypeName>System.Guid</rd:TypeName>
+      </Field>
+      <Field Name="goalowneridEntityName">
+        <DataField>goalowneridEntityName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="fiscalperiod">
+        <DataField>fiscalperiod</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="fiscalperiodValue">
+        <DataField>fiscalperiodValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="fiscalyear">
+        <DataField>fiscalyear</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="fiscalyearValue">
+        <DataField>fiscalyearValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="targetstring">
+        <DataField>targetstring</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="percentage">
+        <DataField>percentage</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="percentageValue">
+        <DataField>percentageValue</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="actualstring">
+        <DataField>actualstring</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="inprogressstring">
+        <DataField>inprogressstring</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="metricid">
+        <DataField>metricid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="metricidValue">
+        <DataField>metricidValue</DataField>
+        <rd:TypeName>System.Guid</rd:TypeName>
+      </Field>
+      <Field Name="metricidEntityName">
+        <DataField>metricidEntityName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="parentgoalid">
+        <DataField>parentgoalid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="parentgoalidValue">
+        <DataField>parentgoalidValue</DataField>
+        <rd:TypeName>System.Guid</rd:TypeName>
+      </Field>
+      <Field Name="parentgoalidEntityName">
+        <DataField>parentgoalidEntityName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalstartdate">
+        <DataField>goalstartdate</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalstartdateValue">
+        <DataField>goalstartdateValue</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="goalenddate">
+        <DataField>goalenddate</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalenddateValue">
+        <DataField>goalenddateValue</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="permobil_timeperiod">
+        <DataField>permobil_timeperiod</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="permobil_timeperiodValue">
+        <DataField>permobil_timeperiodValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="goalid">
+        <DataField>goalid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

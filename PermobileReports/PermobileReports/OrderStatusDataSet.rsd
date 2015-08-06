@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>CRMOnline</DataSourceReference>
+      <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" &gt;
+    &lt;entity name="goal" &gt;
+        &lt;attribute name="title" /&gt;
+        &lt;attribute name="goalstartdate" /&gt;
+        &lt;attribute name="goalid" /&gt;
+        &lt;attribute name="computedtargetasoftodayinteger" /&gt;
+        &lt;attribute name="targetinteger" /&gt;
+        &lt;attribute name="inprogressinteger" /&gt;
+        &lt;attribute name="actualinteger" /&gt;
+        &lt;order attribute="goalstartdate" descending="false" /&gt;
+        &lt;filter type="and" &gt;
+            &lt;condition attribute="goalownerid" operator="eq" uiname="Rune Skogsletten" uitype="systemuser" value="{2B9DE70B-6041-E311-BA84-3C4A92DBDC10}" /&gt;
+            &lt;condition attribute="permobil_timeperiod" operator="eq" value="415360001" /&gt;
+            &lt;condition attribute="metricid" operator="eq" uiname="No. of fittings" uitype="metric" value="{A249B092-7438-E211-8C2E-3C4A92DBDC19}" /&gt;
+            &lt;filter type="or" &gt;
+                &lt;condition attribute="goalstartdate" operator="this-year" /&gt;
+                &lt;condition attribute="goalstartdate" operator="last-year" /&gt;
+            &lt;/filter&gt;
+        &lt;/filter&gt;
+    &lt;/entity&gt;
+&lt;/fetch&gt;</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="title">
+        <DataField>title</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalstartdate">
+        <DataField>goalstartdate</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="goalstartdateValue">
+        <DataField>goalstartdateValue</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="goalid">
+        <DataField>goalid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="computedtargetasoftodayinteger">
+        <DataField>computedtargetasoftodayinteger</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="computedtargetasoftodayintegerValue">
+        <DataField>computedtargetasoftodayintegerValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="targetinteger">
+        <DataField>targetinteger</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="targetintegerValue">
+        <DataField>targetintegerValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="inprogressinteger">
+        <DataField>inprogressinteger</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="inprogressintegerValue">
+        <DataField>inprogressintegerValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="actualinteger">
+        <DataField>actualinteger</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="actualintegerValue">
+        <DataField>actualintegerValue</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
