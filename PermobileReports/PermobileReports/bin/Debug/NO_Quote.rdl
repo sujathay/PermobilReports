@@ -40,7 +40,7 @@
         </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="GetOrderOwners">
+    <DataSet Name="GetQuoteGoal">
       <Query>
         <DataSourceName>PermobilDS</DataSourceName>
         <QueryParameters>
@@ -59,7 +59,7 @@
         &lt;filter type="and" &gt;
             &lt;condition attribute="goalownerid" operator="eq"  value="@OwnerId" /&gt;
             &lt;condition attribute="permobil_timeperiod" operator="eq" value="415360001" /&gt;
-            &lt;condition attribute="metricid" operator="eq" uiname="No. of fittings" uitype="metric" value="{89752065-1440-E311-8B78-3C4A92DBDC19}" /&gt;
+            &lt;condition attribute="metricid" operator="eq" value="{89752065-1440-E311-8B78-3C4A92DBDC19}" /&gt;
             &lt;filter type="or" &gt;
                 &lt;condition attribute="goalstartdate" operator="this-year" /&gt;
                 &lt;condition attribute="goalstartdate" operator="last-year" /&gt;
@@ -201,6 +201,8 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style>
                         <Border>
@@ -248,6 +250,8 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style>
                         <Border>
@@ -299,6 +303,8 @@
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style>
                         <Border>
@@ -520,7 +526,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Permobil Quotes Goals</Caption>
+                <Caption>Permobil Quote Goals Report</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontWeight>Bold</FontWeight>
@@ -545,7 +551,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>GetOrderOwners</DataSetName>
+            <DataSetName>GetQuoteGoal</DataSetName>
             <Height>4.57292in</Height>
             <Width>12.57292in</Width>
             <Style>
@@ -558,10 +564,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>4.58209in</Height>
+        <Height>4.5925in</Height>
         <Style />
       </Body>
-      <Width>12.64584in</Width>
+      <Width>12.58208in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

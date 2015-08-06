@@ -31,6 +31,22 @@
       <FullPath>Copy of OrderStatusReport.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>NO_Order_Report.rdl</Name>
+      <FullPath>NO_Order_Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>NO_Quote.rdl</Name>
+      <FullPath>NO_Quote.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>NO_Fittings.rdl</Name>
+      <FullPath>NO_Fittings.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>NO_Invoiced_Chairs.rdl</Name>
+      <FullPath>NO_Invoiced_Chairs.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>OrderStatusReport-Copied - Copy.rdl</Name>
       <FullPath>OrderStatusReport-Copied - Copy.rdl</FullPath>
     </ProjectItem>
@@ -41,14 +57,6 @@
     <ProjectItem>
       <Name>Report.rdl</Name>
       <FullPath>Report.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>NO Quote.rdl</Name>
-      <FullPath>NO Quote.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>NO. Order Report.rdl</Name>
-      <FullPath>NO. Order Report.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>NO_Revenue_Chair.rdl</Name>
