@@ -35,7 +35,7 @@
               </SortExpressions>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Actual</Label>
+                  <Label>Actual Value</Label>
                 </ChartMember>
                 <ChartMember>
                   <Label>Target Value</Label>
@@ -54,7 +54,7 @@
               <ChartDataPoints>
                 <ChartDataPoint>
                   <ChartDataPointValues>
-                    <Y>=(Fields!Actual.Value)</Y>
+                    <Y>=(Fields!ActualValue.Value)</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
                     <Style />

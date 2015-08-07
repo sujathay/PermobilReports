@@ -59,7 +59,7 @@
         &lt;filter type="and" &gt;
             &lt;condition attribute="goalownerid" operator="eq"  value="@OwnerId" /&gt;
             &lt;condition attribute="permobil_timeperiod" operator="eq" value="415360001" /&gt;
-            &lt;condition attribute="metricid" operator="eq" uiname="No. of fittings" uitype="metric" value="{A249B092-7438-E211-8C2E-3C4A92DBDC19}" /&gt;
+            &lt;condition attribute="metricid" operator="eq" value="{A249B092-7438-E211-8C2E-3C4A92DBDC19}" /&gt;
             &lt;filter type="or" &gt;
                 &lt;condition attribute="goalstartdate" operator="this-year" /&gt;
                 &lt;condition attribute="goalstartdate" operator="last-year" /&gt;
