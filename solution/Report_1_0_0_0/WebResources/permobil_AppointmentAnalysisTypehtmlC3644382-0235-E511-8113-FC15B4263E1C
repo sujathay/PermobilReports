@@ -27,6 +27,8 @@
 	function SetReport() {
 	
 		var id = getDataParam();
+               //var id = 'AD270E76-FF34-E511-8113-FC15B4263E1C'	          
+		//var id = 'ACB71784-4326-E511-8116-C4346BAD0060'
 		if(!IsGuid(id)) {
 			var msg = "Please provide valid id in Web Resource properties dialog.";
 			msg += "\n\nMake sure that %7b from beginning and %7d from end are not present in the custom parameter of web resource properties."
@@ -126,6 +128,6 @@
 		}
 	}
 </script>
-<meta><meta><meta><meta><meta><meta><meta><meta></head>
+<meta><meta><meta><meta><meta><meta></head>
 <body style="margin: 0px; word-wrap: break-word;" onload="SetReport()">
 </body></html>

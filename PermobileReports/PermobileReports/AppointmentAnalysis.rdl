@@ -76,53 +76,21 @@
         <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
   &lt;entity name="systemuser"&gt;
     &lt;attribute name="fullname" /&gt;
-    &lt;attribute name="businessunitid" /&gt;
-    &lt;attribute name="title" /&gt;
-    &lt;attribute name="address1_telephone1" /&gt;
-    &lt;attribute name="positionid" /&gt;
     &lt;attribute name="systemuserid" /&gt;
     &lt;order attribute="fullname" descending="false" /&gt;
     &lt;filter type="and"&gt;
-      &lt;condition attribute="parentsystemuserid" operator="eq" uiname="Håkon Bertelsen" uitype="systemuser" value="{6F4FDE98-7140-E311-8BEF-D48564519C0E}" /&gt;
+ &lt;filter type="or"&gt;
+       &lt;condition attribute="parentsystemuserid" operator="eq-userid"/&gt;
+       &lt;condition attribute="systemuserid" operator="eq-userid"/&gt;
+&lt;/filter&gt;
     &lt;/filter&gt;
   &lt;/entity&gt;
 &lt;/fetch&gt;</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="fullname">
           <DataField>fullname</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="businessunitid">
-          <DataField>businessunitid</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="businessunitidValue">
-          <DataField>businessunitidValue</DataField>
-          <rd:TypeName>System.Guid</rd:TypeName>
-        </Field>
-        <Field Name="businessunitidEntityName">
-          <DataField>businessunitidEntityName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="title">
-          <DataField>title</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="address1_telephone1">
-          <DataField>address1_telephone1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="positionid">
-          <DataField>positionid</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="positionidValue">
-          <DataField>positionidValue</DataField>
-          <rd:TypeName>System.Guid</rd:TypeName>
-        </Field>
-        <Field Name="positionidEntityName">
-          <DataField>positionidEntityName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="systemuserid">
@@ -151,6 +119,7 @@
     &lt;/filter&gt;
   &lt;/entity&gt;
 &lt;/fetch&gt;</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="subject">
@@ -351,6 +320,63 @@
         <Field Name="permobil_typeValue">
           <DataField>permobil_typeValue</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="GetAllRepresentative">
+      <Query>
+        <DataSourceName>PermobilDS</DataSourceName>
+        <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
+  &lt;entity name="systemuser"&gt;
+    &lt;attribute name="fullname" /&gt;
+    &lt;attribute name="systemuserid" /&gt;
+    &lt;order attribute="fullname" descending="false" /&gt;
+    &lt;filter type="and"&gt;
+ &lt;filter type="or"&gt;
+       &lt;condition attribute="parentsystemuserid" operator="eq-userid"/&gt;
+       &lt;condition attribute="systemuserid" operator="eq-userid"/&gt;
+&lt;/filter&gt;
+    &lt;/filter&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="fullname">
+          <DataField>fullname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="systemuserid">
+          <DataField>systemuserid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="LoggedInUser">
+      <Query>
+        <DataSourceName>PermobilDS</DataSourceName>
+        <CommandText>&lt;fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false"&gt;
+  &lt;entity name="systemuser"&gt;
+    &lt;attribute name="fullname" /&gt;
+    &lt;attribute name="systemuserid" /&gt;
+    &lt;order attribute="fullname" descending="false" /&gt;
+    &lt;filter type="and"&gt;
+ &lt;filter type="or"&gt;
+       &lt;condition attribute="systemuserid" operator="eq-userid"/&gt;
+&lt;/filter&gt;
+    &lt;/filter&gt;
+  &lt;/entity&gt;
+&lt;/fetch&gt;</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="fullname">
+          <DataField>fullname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="systemuserid">
+          <DataField>systemuserid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
