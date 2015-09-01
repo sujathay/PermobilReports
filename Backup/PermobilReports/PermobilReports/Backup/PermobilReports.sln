@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "PermobilReports", "PermobilReports\PermobilReports.rptproj", "{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Debug|Default.ActiveCfg = Debug
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Debug|Default.Build.0 = DebugLocal
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Debug|Default.Deploy.0 = DebugLocal
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.DebugLocal|Default.Build.0 = DebugLocal
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Release|Default.ActiveCfg = Release
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Release|Default.Build.0 = Release
+		{6FC878F6-B13B-41D3-B45C-E13F1023FAFE}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
